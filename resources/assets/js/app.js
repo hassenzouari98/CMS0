@@ -4,10 +4,13 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
+import Buefy from 'buefy'
 require('./bootstrap');
 
 window.Vue = require('vue');
+
+// Buefy: Bulma components for Vue
+Vue.use(Buefy)
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,8 +18,8 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
+// const app = new Vue({
+//     el: '#app'
+// });
